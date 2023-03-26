@@ -17,13 +17,13 @@ class Project(models.Model):
         expense_list = Expense.objects.filter(project=self)
         total_expense_amount = 0
 
-        total_temp = 0
-        budget_temp = 100
-        expense_list_temp = [10, 11, 12, 14, 11]
-        for expenses in expense_list_temp:
-            total_temp += expenses
-        expense_amount = total_temp
-        new_budget_temp = budget_temp - expense_amount
+        # total_temp = 0
+        # budget_temp = 100
+        # expense_list_temp = [10, 11, 12, 14, 11]
+        # for expenses in expense_list_temp:
+        #     total_temp += expenses
+        # expense_amount = total_temp
+        # new_budget_temp = budget_temp - expense_amount
 
 
         for expense in expense_list:
